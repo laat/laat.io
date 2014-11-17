@@ -16,3 +16,7 @@ RUN cabal update && cabal install hakyll
 
 WORKDIR /src
 ADD . /src
+
+RUN ghc --make site.hs
+RUN ./site build
+ADD nginx.conf /etc/nginx.conf

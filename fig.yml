@@ -2,3 +2,6 @@ web:
   build: .
   volumes:
     - .:/src
+  ports:
+    - "9080:80"
+    - "9443:443"
