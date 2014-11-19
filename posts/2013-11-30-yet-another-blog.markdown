@@ -12,7 +12,7 @@ with markdown. For better markdown support I'm using [pandoc][pandoc] through a
 [pandoc-plugin][pdp] for jekyll.
 
 If I'm ever going to blog about math I have also added [mathjax][mathjax] that
-renders $\LaTeX$ math formulas like this:
+renders LaTeX math formulas like this:
 $$ J_\alpha(x) = \sum\limits_{m=0}^\infty \frac{(-1)^m}{m! \, \Gamma(m + \alpha + 1)}{\left({\frac{x}{2}}\right)}^{2 m + \alpha} $$
 
 For styling I've used basic HTML5 and CSS3 with [normalize.css][normalize] and

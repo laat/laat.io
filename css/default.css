@@ -1,56 +1,91 @@
 body {
-    color: black;
-    font-size: 16px;
-    margin: 0px auto 0px auto;
-    width: 600px;
+    font-family:Garamond, Georgia, serif;
+    margin: 15px;
+    line-height: 140%;
+    font-size: 135%;
 }
 
-div#header {
-    border-bottom: 2px solid black;
-    margin-bottom: 30px;
-    padding: 12px 0px 12px 0px;
+.logo {
+    display: block;
+    float:left;
+    color: #428bca;
+    font-family: "Source Code Pro", source-code-pro,Consolas, monospace;
 }
 
-div#logo a {
-    color: black;
-    float: left;
-    font-size: 18px;
-    font-weight: bold;
+.header,
+footer,
+#content {
+    max-width: 630px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.icon-menu{
+    float:right;
+}
+.icon-menu ul{
+    margin: 0;
+}
+
+.icon-menu li{
+    display: inline;
+    list-style-type: none;
+    padding-left: 3px;
+}
+
+.icon-menu a{
+    color: #428bca;
     text-decoration: none;
 }
 
-div#header #navigation {
-    text-align: right;
+
+pre.sourceCode {
+    padding: 10px;
+    border-radius: 5px;
 }
 
-div#header #navigation a {
-    color: black;
-    font-size: 18px;
-    font-weight: bold;
-    margin-left: 12px;
-    text-decoration: none;
-    text-transform: uppercase;
+code {
+    font-family: "Source Code Pro", source-code-pro,Consolas, monospace;
+    font-size: 65%;
 }
 
-div#footer {
-    border-top: solid 2px black;
-    color: #555;
-    font-size: 12px;
-    margin-top: 30px;
-    padding: 12px 0px 12px 0px;
-    text-align: right;
+.smaller{
+    font-size: 85%;
 }
 
-h1 {
-    font-size: 24px;
+h1, h2, h3 {
+  font-family: "Helvetica Neue", Helvetica, serif;
 }
 
-h2 {
-    font-size: 20px;
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
 }
 
-div.info {
-    color: #555;
-    font-size: 14px;
-    font-style: italic;
+.clearfix:after {
+    clear: both;
 }
+
+.clearfix {
+    *zoom: 1;
+}
+
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode, table.sourceCode pre
+                                                                     { margin: 0; padding: 0; border: 0; vertical-align: baseline; border: none; }
+td.lineNumbers { border-right: 1px solid #AAAAAA; text-align: right; color: #AAAAAA; padding-right: 5px; padding-left: 5px; }
+code.sourceCode, pre.sourceCode, table.sourceCode { background-color: #2A211C; color: #BDAE9D; }
+td.sourceCode { padding-left: 5px; }
+code.sourceCode span.kw { color: #43A8ED; font-weight: bold; }
+code.sourceCode span.dt { text-decoration: underline; }
+code.sourceCode span.dv { color: #44AA43; }
+code.sourceCode span.bn { color: #44AA43; }
+code.sourceCode span.fl { color: #44AA43; }
+code.sourceCode span.ch { color: #049B0A; }
+code.sourceCode span.st { color: #049B0A; }
+code.sourceCode span.co { color: #0066FF; font-style: italic; }
+code.sourceCode span.ot { }
+code.sourceCode span.al { color: yellow; font-weight: bold; }
+code.sourceCode span.fu { color: #FF9358; font-weight: bold; }
+code.sourceCode span.re { }
+code.sourceCode span.er { color: yellow; font-weight: bold; }

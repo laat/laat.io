@@ -9,13 +9,13 @@ happened after I pressed that magic "repair disk" button in disk util. It did
 not repair my disk but it decided to break the partition table instead. (I had
 Linux partitions there as well).
 
-Symptoms:  
+Symptoms:
 
  * A big question mark on the screen on boot. 
  * Command-R had to download from the web to restore.
 
 The magic command, that took hours to find:
-```shell
+``` {.bash .smaller}
 $ diskutil partitionDisk disk0 1 GPTFormat "Journaled HFS+" "Macintosh HD" 250G
 ```
 This created a JHFS+ partiton on my boot disk. (it's 250 GB ssd), and I was able to reinstall OS X after that.
